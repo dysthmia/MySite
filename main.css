@@ -1,0 +1,137 @@
+/* шрифты */
+.topic_font{
+    color: black;
+    font-family: "Shadows Into Light";/* включение шрифта */
+}
+
+.default.text{
+    color: black;
+    font-family: "Slabo 27px";
+}
+
+
+
+
+
+
+/* чтобы по центру йоу */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* для фотки) */
+.block_for_foto{
+    width: 330px;
+    height: 330px;
+    border: 3px black solid;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* основная часть */
+.BigBox{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+}
+
+/*  */
+
+
+/* блоки и анимации */
+.block1{
+    width: 340px;
+    height: 225px;
+    border: 3px black solid;
+}
+.block1:hover{
+    width:350px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+
+/*  */
+
+.block2{
+    width: 340px;
+    height: 225px;
+    border: 3px black solid;
+}
+.block2:hover{
+    width:350px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+/*  */
+
+
+.block3{
+    width: 340px;
+    height: 225px;
+    border: 3px black solid;
+}
+.block3:hover{
+    width:350px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.bloks{
+    margin: 10px 20px 10px 20px;
+}
+/*  */
+
+
+/* разграничительная черта */
+.block_line{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 0px;
+    border: 1px black solid;
+}
+
+
+.BigBoxMusic{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+}
+.blok1Music{
+    width: 680px;
+    height: 680px;
+    border: 3px black solid;
+}
+.blok2Music{
+    width: 340px;
+    height: 680px;
+    border: 3px black solid;
+}
+.blok2Music:hover{
+    width:600px;
+    height: 720px;
+    transition: 0.5s;
+
+}
+
+
