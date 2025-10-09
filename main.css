@@ -99,7 +99,7 @@
     font-family: "Shadows Into Light";
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content: flex-end;
+    
 }
 
 .btn-gradient:hover {
