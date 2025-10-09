@@ -1,20 +1,15 @@
-/* шрифты */
+/* Стили шрифтов */
 .topic_font{
-    color: black;
-    font-family: "Shadows Into Light";/* включение шрифта */
+    color: #4D4D4D;
+    font-family: "Shadows Into Light"; /* Основной шрифт для заголовков */
 }
 
-.default.text{
-    color: black;
-    font-family: "Slabo 27px";
+.default_text{
+    color: #808080;
+    font-family: "Slabo 27px"; /* Шрифт для обычного текста */
 }
 
-
-
-
-
-
-/* чтобы по центру йоу */
+/* Центрирование элементов */
 .center {
     display: flex;
     justify-content: center;
@@ -22,116 +17,91 @@
     margin: 0 auto;
 }
 
-
-
-
-
-/* для фотки) */
+/* Стиль для блока с фотографией */
 .block_for_foto{
     width: 330px;
     height: 330px;
-    border: 3px black solid;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-
-
-
-
-/* основная часть */
+/* Основной контейнер для блоков информации */
 .BigBox{
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 50px;
-    display:flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px;
+    display: flex; /*пластичный */
+    justify-content: center; /*Элементы по центру горизонтально */
+    align-items: center; /* Элементы по центру вертикально */
+    gap: 0px; 
 }
 
-/*  */
-
-
-/* блоки и анимации */
+/* Стили для информационных блоков с анимацией при наведении */
 .block1{
     width: 340px;
     height: 225px;
-    border: 3px black solid;
+    transition: 1.0s; /* Плавная анимация изменения размера */
 }
 .block1:hover{
-    width:350px;
+    width: 350px;
     height: 350px;
-    transition: 0.5s;
 }
 
-
-/*  */
-
-.block2{
-    width: 340px;
-    height: 225px;
-    border: 3px black solid;
-}
-.block2:hover{
-    width:350px;
-    height: 350px;
-    transition: 0.5s;
-}
-
-/*  */
-
-
-.block3{
-    width: 340px;
-    height: 225px;
-    border: 3px black solid;
-}
-.block3:hover{
-    width:350px;
-    height: 350px;
-    transition: 0.5s;
-}
-
+/* Внутренние отступы для блоков */
 .bloks{
-    margin: 10px 20px 10px 20px;
+    margin: 10px;
 }
-/*  */
 
+/* Контейнер для изображений с наложенным текстом */
+.image-container {
+    position: relative;/* типо как бы ну типо будет служить фоном */
+}
 
-/* разграничительная черта */
+/* Позиционирование текста поверх изображения */
+.text-content {
+    position: absolute;/* а вот это типо ну йоу чтобы на фоне было */
+    top: 20px;    
+    left: 30px;   
+    right: 10px;  
+}
+
+/* Стили для заголовков поверх изображения */
+.overlay-title {
+    margin: 0 0 0px 0;
+    font-weight: bold; /* вообще для жира но я не заметил разницы */
+}
+
+/* Стили для текста поверх изображения */
+.overlay-text {
+    margin: 20 0 20px 0;
+    line-height: 1.2; /* Межстрочный интервал */
+    width: 100%; /* Занимает всю доступную ширину */
+}
+
+/* Разделительная линия */
 .block_line{
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 0px;
-    border: 1px black solid;
+    border: 1px solid #4D4D4D;
 }
 
-
-.BigBoxMusic{
-    margin-top: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 50px;
-    display:flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px;
-}
-.blok1Music{
-    width: 680px;
-    height: 680px;
-    border: 3px black solid;
-}
-.blok2Music{
-    width: 340px;
-    height: 680px;
-    border: 3px black solid;
-}
-.blok2Music:hover{
-    width:600px;
-    height: 720px;
-    transition: 0.5s;
-
+/* sexy button*/
+.btn-gradient {
+    background: linear-gradient(160deg, #4D4D4D, #CFCFCF);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    font-weight: bold;
+    font-family: "Shadows Into Light";
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-end;
 }
 
-
+.btn-gradient:hover {
+    transform: translateY(-3px);
+}
